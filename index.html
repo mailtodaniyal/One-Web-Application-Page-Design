@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constant Associates - Document Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <div class="logo-container">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgNTAiPjxjaXJjbGUgY3g9IjE1IiBjeT0iMTUiIHI9IjE1IiBmaWxsPSIjMDA1M2E5Ii8+PHRleHQgeD0iNDAiIHk9IjIwIiBmb250LWZhbWlseT0iQ2VudHVyeSBHb3RoaWMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDUzMzY5IiBmb250LXNpemU9IjE0Ij5DT05TVEFOVDwvdGV4dD48dGV4dCB4PSI0MCIgeT0iMzUiIGZvbnQtZmFtaWx5PSJDZW50dXJ5IEdvdGhpYyIgZmlsbD0iIzQyNDI0MiIgZm9udC1zaXplPSIxMCI+QXNzb2NpYXRlczwvdGV4dD48L3N2Zz4=" alt="Constant Associates Logo" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Admin</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Users</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Clients</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Errotes</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="word-logo">W</span>
+                        <span class="word-logo-text">Word Document</span>
+                    </a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link active">Document Settings</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Text Styles</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Bullet List Settings</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Ordered List Settings</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Table Styles</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Download Template</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="header">
+                <div class="breadcrumb">
+                    <a href="#">Home</a> > <a href="#">Word Document</a> > Document Settings
+                </div>
+                <div class="user-info">
+                    <div class="user-avatar">PW</div>
+                    <div class="user-name">Patrick Wensel</div>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <h1 class="form-title">Document Settings</h1>
+                
+                <div class="form-group">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" id="title" class="form-input" placeholder="Enter document title">
+                </div>
+                
+                <div class="form-group">
+                    <label for="author" class="form-label">Author</label>
+                    <input type="text" id="author" class="form-input" placeholder="Enter author name">
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="marginTop" class="form-label">Margin Top</label>
+                        <input type="text" id="marginTop" class="form-input" placeholder="e.g., 1in">
+                    </div>
+                    <div class="form-col">
+                        <label for="marginBottom" class="form-label">Margin Bottom</label>
+                        <input type="text" id="marginBottom" class="form-input" placeholder="e.g., 1in">
+                    </div>
+                    <div class="form-col">
+                        <label for="marginLeft" class="form-label">Margin Left</label>
+                        <input type="text" id="marginLeft" class="form-input" placeholder="e.g., 1in">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <h3 style="color: var(--constant-blue); margin-bottom: 15px; font-size: 16px;">Watermark Settings</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="watermarkText" class="form-label">Watermark Text</label>
+                            <input type="text" id="watermarkText" class="form-input" placeholder="Enter watermark text">
+                        </div>
+                        <div class="form-col">
+                            <label for="watermarkFont" class="form-label">Select Font</label>
+                            <select id="watermarkFont" class="form-select">
+                                <option value="Arial">Arial</option>
+                                <option value="Century Gothic" selected>Century Gothic</option>
+                                <option value="Times New Roman">Times New Roman</option>
+                                <option value="Courier New">Courier New</option>
+                            </select>
+                        </div>
+                        <div class="form-col">
+                            <label for="fontSize" class="form-label">Font Size</label>
+                            <select id="fontSize" class="form-select">
+                                <option value="36">36pt</option>
+                                <option value="48" selected>48pt</option>
+                                <option value="60">60pt</option>
+                                <option value="72">72pt</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="checkbox-container" style="margin-top: 15px;">
+                        <input type="checkbox" id="semiTransparent" class="checkbox-input" checked>
+                        <label for="semiTransparent" class="checkbox-label">Semi Transparent?</label>
+                    </div>
+                    
+                    <div class="watermark-preview">
+                        <div id="watermarkPreview" class="watermark-text">CONFIDENTIAL</div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="font" class="form-label">Font</label>
+                        <select id="font" class="form-select">
+                            <option value="Arial">Arial</option>
+                            <option value="Century Gothic" selected>Century Gothic</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                        </select>
+                    </div>
+                    <div class="form-col">
+                        <label for="language" class="form-label">Language</label>
+                        <select id="language" class="form-select">
+                            <option value="en-US" selected>English (US)</option>
+                            <option value="en-UK">English (UK)</option>
+                            <option value="es">Spanish</option>
+                            <option value="fr">French</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="paperSize" class="form-label">Paper Size</label>
+                        <select id="paperSize" class="form-select">
+                            <option value="letter" selected>Letter</option>
+                            <option value="a4">A4</option>
+                            <option value="legal">Legal</option>
+                        </select>
+                    </div>
+                    <div class="form-col">
+                        <label for="orientation" class="form-label">Orientation</label>
+                        <select id="orientation" class="form-select">
+                            <option value="portrait" selected>Portrait</option>
+                            <option value="landscape">Landscape</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="bgColor" class="form-label">Background Color</label>
+                        <input type="color" id="bgColor" class="form-input" value="#ffffff" style="height: 40px; padding: 3px;">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="passwordProtected" class="checkbox-input">
+                        <label for="passwordProtected" class="checkbox-label">Password Protected?</label>
+                        <div class="tooltip">
+                            <span style="color: var(--bright-blue);">ⓘ</span>
+                            <span class="tooltiptext">Enable password protection for this document</span>
+                        </div>
+                    </div>
+                    
+                    <div id="passwordFields" style="display: none; margin-top: 15px;">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" class="form-input" placeholder="Enter password">
+                        <div class="password-strength">
+                            <div class="password-strength-bar" id="passwordStrengthBar"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button class="btn btn-secondary">Cancel</button>
+                    <button class="btn btn-primary pulse">Save Settings</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+   
+</body>
+</html>
